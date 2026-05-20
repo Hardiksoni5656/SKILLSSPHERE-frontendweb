@@ -1,7 +1,10 @@
 import axios from "axios"
 
-const aiApi = axios.create({
-  baseURL: "http://127.0.0.1:9000"
+const api = axios.create({
+
+  baseURL:
+    process.env.NEXT_PUBLIC_API_URL
+
 })
 
-export default aiApi
+export default api
